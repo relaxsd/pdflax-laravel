@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf6c8b679449bdf68211a5b37394a749",
+    "content-hash": "2b80e31d148d4c9ccfe05dafb82b85d3",
     "packages": [
         {
             "name": "anouar/fpdf",
@@ -97,7 +97,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/pdflax.git",
-                "reference": "604ce1fe72f8d6fbc994391456bd02401368700d"
+                "reference": "4f4e562ebfd8ff2ba7e098ae1f55055628231a44"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -122,7 +122,38 @@
                 }
             ],
             "description": "PDF document and view wrappers for PHP.",
-            "time": "2018-09-14T14:46:07+00:00"
+            "time": "2018-09-14T23:15:34+00:00"
+        },
+        {
+            "name": "relaxsd/pdflax-fpdf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/pdflax-fpdf.git",
+                "reference": "ee84df7f0895c3bd161238fb0f2b1bb87871f055"
+            },
+            "require": {
+                "anouar/fpdf": "1.0.1",
+                "relaxsd/pdflax": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pdflax\\Fpdf\\": "src/Fpdf"
+                }
+            },
+            "notification-url": "https://packagist.relax-software.nl/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martijn Kriek",
+                    "email": "martijn.kriek@relax-software.nl"
+                }
+            ],
+            "description": "Fpdf implementation for Pdflax.",
+            "time": "2018-09-14T23:27:14+00:00"
         }
     ],
     "packages-dev": [
@@ -1308,7 +1339,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "relaxsd/pdflax": 20
+        "relaxsd/pdflax": 20,
+        "relaxsd/pdflax-fpdf": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
