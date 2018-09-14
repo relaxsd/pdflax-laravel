@@ -37,7 +37,7 @@ class PdflaxServiceProvider extends ServiceProvider
     {
 
         // Singleton: One registry containing all PdfCreator implementations
-        $this->app->share('pdflax-registry', function () {
+        $this->app->singleton('pdflax-registry', function () {
             return new \Pdflax\Registry\RegistryWithDefault();
         });
 
