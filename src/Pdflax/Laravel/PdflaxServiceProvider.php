@@ -3,7 +3,6 @@
 namespace Pdflax\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use Pdflax\Factory\PdflaxFactory;
 
 class PdflaxServiceProvider extends ServiceProvider
 {
@@ -23,6 +22,10 @@ class PdflaxServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->package('relaxsd/pdflax-laravel');
+
+        // Since there is only one PdfCreator implementation (Fpdf), it is required by this project
+        // and registered as default here:
+        $this->app->make('pdflax-registry')->register('fpdf', 'Pdflax\Factory\FPdfPdfCreator', true);
     }
 
     /**
@@ -32,16 +35,20 @@ class PdflaxServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['pdflax'] = $this->app->share(function ($app) {
-            return new PdflaxFactory;
+
+        // Singleton: One registry containing all PdfCreator implementations
+        $this->app->share('pdflax-registry', function () {
+            return new \Pdflax\Registry\RegistryWithDefault();
         });
 
-        // TODO: Shortcut so developers don't need to add an Alias in app/config/app.php
-        //        $this->app->booting(function()
-        //        {
-        //            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-        //            $loader->alias('Pdflax', 'Pdflax\Laravel\PdflaxFacade');
-        //        });
+        // Pdflax Facade returns PdfCreatorRegistry object that all use the same
+        // PdfCreator registry.
+        $this->app->bind('pdflax', function ($app) {
+            return new \Pdflax\Creator\PdfCreatorRegistry(
+                $app->make('pdflax-registry')
+            );
+        });
+
     }
 
     /**
@@ -51,7 +58,7 @@ class PdflaxServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('pdflax');
+        return ['pdflax-registry', 'pdflax'];
     }
 
 }
