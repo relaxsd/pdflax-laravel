@@ -1,0 +1,26 @@
+{
+  "name": "relaxsd/pdflax-laravel",
+  "description": "Laravel wrapper and Fpdf implementation for Pdflax.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martijn Kriek",
+      "email": "martijn.kriek@relax-software.nl"
+    }
+  ],
+  "require": {
+    "anouar/fpdf": "1.0.1",
+    "illuminate/support": "~4.0",
+    "php": ">=5.4.0",
+    "relaxsd/pdflax": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pdflax\\": "src/Pdflax"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.0"
+  }
+}
