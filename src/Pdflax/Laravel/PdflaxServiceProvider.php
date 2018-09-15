@@ -25,7 +25,7 @@ class PdflaxServiceProvider extends ServiceProvider
 
         // Since there is only one PdfCreator implementation (Fpdf), it is required by this project
         // and registered as default here:
-        $this->app->make('pdflax-registry')->register('fpdf', 'Pdflax\Factory\FPdfPdfCreator', true);
+        $this->app->make('pdflax-registry')->register('fpdf', 'Pdflax\Fpdf\FPdfPdfCreator', true);
     }
 
     /**
