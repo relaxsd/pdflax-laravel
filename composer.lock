@@ -97,7 +97,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/pdflax.git",
-                "reference": "4f4e562ebfd8ff2ba7e098ae1f55055628231a44"
+                "reference": "917d5a52892ba4c3b5bc43d8e35e088d7ee96c96"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -122,7 +122,7 @@
                 }
             ],
             "description": "PDF document and view wrappers for PHP.",
-            "time": "2018-09-14T23:15:34+00:00"
+            "time": "2018-09-15T14:38:25+00:00"
         },
         {
             "name": "relaxsd/pdflax-fpdf",
