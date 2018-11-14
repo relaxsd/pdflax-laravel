@@ -8,7 +8,7 @@ class PdflaxServiceProviderTest extends TestCase
     /** @var PHPUnit_Framework_MockObject_MockObject|Illuminate\Foundation\Application */
     protected $applicationMock;
 
-    /** @var \Pdflax\Laravel\PdflaxServiceProvider */
+    /** @var \Relaxsd\Pdflax\Laravel\PdflaxServiceProvider */
     protected $serviceProvider;
 
     protected function setUp()
@@ -17,7 +17,7 @@ class PdflaxServiceProviderTest extends TestCase
 
         $this->applicationMock = $this->getMock('\Illuminate\Contracts\Foundation\Application', ['bind', 'make', 'singleton']);
 
-        $this->serviceProvider = new \Pdflax\Laravel\PdflaxServiceProvider($this->applicationMock);
+        $this->serviceProvider = new \Relaxsd\Pdflax\Laravel\PdflaxServiceProvider($this->applicationMock);
     }
 
     /**
@@ -25,7 +25,7 @@ class PdflaxServiceProviderTest extends TestCase
      */
     public function it_can_be_constructed()
     {
-        $this->assertInstanceOf('Pdflax\Laravel\PdflaxServiceProvider', $this->serviceProvider);
+        $this->assertInstanceOf('Relaxsd\Pdflax\Laravel\PdflaxServiceProvider', $this->serviceProvider);
     }
 
     /**
@@ -54,11 +54,11 @@ class PdflaxServiceProviderTest extends TestCase
     public function it_boots_to_registers_the_package_and_fpdf_implementation() {
 
         // We need to mock the object under test because we want to intercept its call to parent::package()
-        /** @var \Pdflax\Laravel\PdflaxServiceProvider $serviceProviderMock */
-        $serviceProviderMock = $this->getMock('Pdflax\Laravel\PdflaxServiceProvider', ['package'], [$this->applicationMock]);
+        /** @var \Relaxsd\Pdflax\Laravel\PdflaxServiceProvider $serviceProviderMock */
+        $serviceProviderMock = $this->getMock('Relaxsd\Pdflax\Laravel\PdflaxServiceProvider', ['package'], [$this->applicationMock]);
 
         // We also need to mock a registry because the ServiceProvider will register a PdfCreator implementation
-        $registryMock = $this->getMock('Pdflax\Registry\RegistryWithDefault', ['register']);
+        $registryMock = $this->getMock('Relaxsd\Pdflax\Registry\RegistryWithDefault', ['register']);
 
         // We expect the service provider to register itself as a package
         $serviceProviderMock
@@ -77,7 +77,7 @@ class PdflaxServiceProviderTest extends TestCase
         $registryMock
             ->expects($this->once())
             ->method('register')
-            ->with('fpdf', 'Pdflax\Fpdf\FPdfPdfCreator', true);
+            ->with('fpdf', 'Relaxsd\Pdflax\Fpdf\FPdfPdfCreator', true);
 
         $serviceProviderMock->boot();
     }

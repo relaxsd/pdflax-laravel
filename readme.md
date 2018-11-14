@@ -14,6 +14,6 @@
     ...
     
     // Add The Pdflax Facade
-    'Pdflax'          => 'Pdflax\Laravel\PdflaxFacade',
+    'Relaxsd\Pdflax'          => 'Relaxsd\Pdflax\Laravel\PdflaxFacade',
 ),
 ```

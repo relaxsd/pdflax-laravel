@@ -25,7 +25,7 @@ class PdflaxServiceProvider extends ServiceProvider
 
         // Since there is only one PdfCreator implementation (Fpdf), it is required by this project
         // and registered as default here:
-        $this->app->make('pdflax-registry')->register('fpdf', 'Pdflax\Fpdf\FPdfPdfCreator', true);
+        $this->app->make('pdflax-registry')->register('fpdf', 'Relaxsd\Pdflax\Fpdf\FPdfPdfCreator', true);
     }
 
     /**
@@ -38,13 +38,13 @@ class PdflaxServiceProvider extends ServiceProvider
 
         // Singleton: One registry containing all PdfCreator implementations
         $this->app->singleton('pdflax-registry', function () {
-            return new \Pdflax\Registry\RegistryWithDefault();
+            return new \Relaxsd\Pdflax\Registry\RegistryWithDefault();
         });
 
         // Pdflax Facade returns PdfCreatorRegistry object that all use the same
         // PdfCreator registry.
         $this->app->bind('pdflax', function ($app) {
-            return new \Pdflax\Creator\PdfCreatorRegistry(
+            return new \Relaxsd\Pdflax\Creator\PdfCreatorRegistry(
                 $app->make('pdflax-registry')
             );
         });
