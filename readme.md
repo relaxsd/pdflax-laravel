@@ -7,13 +7,13 @@
     ...
     
     // Add The Pdflax ServiceProvider
-    '\Pdflax\Laravel\PdflaxServiceProvider',
+    'Relaxsd\Pdflax\Laravel\PdflaxServiceProvider',
 ),
 
 'aliases' => array(
     ...
     
     // Add The Pdflax Facade
-    'Relaxsd\Pdflax'          => 'Relaxsd\Pdflax\Laravel\PdflaxFacade',
+    'Pdflax'          => 'Relaxsd\Pdflax\Laravel\PdflaxFacade',
 ),
 ```
