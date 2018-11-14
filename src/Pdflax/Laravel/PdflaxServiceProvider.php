@@ -1,6 +1,6 @@
 <?php
 
-namespace Pdflax\Laravel;
+namespace Relaxsd\Pdflax\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 
