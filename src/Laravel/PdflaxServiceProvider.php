@@ -21,8 +21,6 @@ class PdflaxServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('relaxsd/pdflax-laravel');
-
         // Since there is only one PdfCreator implementation (Fpdf), it is required by this project
         // and registered as default here:
         $this->app->make('pdflax-registry')->register('fpdf', 'Relaxsd\Pdflax\Fpdf\FPdfPdfCreator', true);

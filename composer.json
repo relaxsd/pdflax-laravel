@@ -1,6 +1,6 @@
 {
   "name": "relaxsd/pdflax-laravel",
-  "description": "Laravel wrapper for Pdflax.",
+  "description": "Laravel 5 wrapper for Pdflax.",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -10,17 +10,28 @@
     }
   ],
   "require": {
-    "illuminate/support": "~4.0",
-    "php": ">=5.4.0",
+    "illuminate/support": "~5.5",
+    "php": ">=7.0",
     "relaxsd/pdflax": "dev-master",
-    "relaxsd/pdflax-fpdf": "dev-master"
+    "relaxsd/pdflax-fpdf": "dev-master",
+    "relaxsd/php-stylesheets": "dev-master"
   },
   "require-dev": {
-    "phpunit/phpunit": "^4.0"
+    "phpunit/phpunit": "~6.0"
   },
   "autoload": {
     "psr-4": {
       "Relaxsd\\Pdflax\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Relaxsd\\Pdflax\\Laravel\\PdflaxServiceProvider"
+      ],
+      "aliases": {
+        "Pdflax": "Relaxsd\\Pdflax\\Laravel\\PdflaxFacade"
+      }
     }
   }
 }
