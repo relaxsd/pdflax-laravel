@@ -22,5 +22,10 @@
     "psr-4": {
       "Relaxsd\\Pdflax\\": "src"
     }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-laravel4-master": "4.1-dev"
+    }
   }
 }
