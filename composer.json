@@ -12,8 +12,8 @@
   "require": {
     "illuminate/support": "~4.0",
     "php": ">=5.4.0",
-    "relaxsd/pdflax": "dev-master",
-    "relaxsd/pdflax-fpdf": "dev-master"
+    "relaxsd/pdflax": "^0.8.0",
+    "relaxsd/pdflax-fpdf": "^0.8.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.0"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b80e31d148d4c9ccfe05dafb82b85d3",
+    "content-hash": "708d81f04c1704ee860d6cb1d6974e14",
     "packages": [
         {
             "name": "anouar/fpdf",
@@ -93,14 +93,15 @@
         },
         {
             "name": "relaxsd/pdflax",
-            "version": "dev-master",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/pdflax.git",
-                "reference": "917d5a52892ba4c3b5bc43d8e35e088d7ee96c96"
+                "reference": "6c576a32dd6a9d6790c2c6df2c05a4f4ac511709"
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.4.0",
+                "relaxsd/php-stylesheets": "^2.0.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4"
@@ -108,7 +109,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Pdflax\\": "src/Pdflax"
+                    "Relaxsd\\Pdflax\\": "src"
                 }
             },
             "notification-url": "https://packagist.relax-software.nl/downloads/",
@@ -122,27 +123,36 @@
                 }
             ],
             "description": "PDF document and view wrappers for PHP.",
-            "time": "2018-09-15T14:38:25+00:00"
+            "time": "2019-01-03T14:57:42+00:00"
         },
         {
             "name": "relaxsd/pdflax-fpdf",
-            "version": "dev-master",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
-                "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/pdflax-fpdf.git",
-                "reference": "92414f50e489b55ee9ff9138c188d2f0bbb1e415"
+                "url": "https://github.com/relaxsd/pdflax-fpdf.git",
+                "reference": "036b0e1d1422584300f3ecea88b671e4b33dc75f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/relaxsd/pdflax-fpdf/zipball/036b0e1d1422584300f3ecea88b671e4b33dc75f",
+                "reference": "036b0e1d1422584300f3ecea88b671e4b33dc75f",
+                "shasum": ""
             },
             "require": {
-                "anouar/fpdf": "1.0.1",
-                "relaxsd/pdflax": "dev-master"
+                "anouar/fpdf": ">=1.0.1",
+                "relaxsd/pdflax": "^0.8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Pdflax\\Fpdf\\": "src/Fpdf"
+                    "Relaxsd\\Pdflax\\Fpdf\\": "src"
                 }
             },
-            "notification-url": "https://packagist.relax-software.nl/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -153,38 +163,77 @@
                 }
             ],
             "description": "Fpdf implementation for Pdflax.",
-            "time": "2018-09-15T00:15:56+00:00"
+            "time": "2019-01-03T15:16:34+00:00"
+        },
+        {
+            "name": "relaxsd/php-stylesheets",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/relaxsd/php-stylesheets.git",
+                "reference": "a1472daa479474aeba21dc8895487e5ee864e67c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/relaxsd/php-stylesheets/zipball/a1472daa479474aeba21dc8895487e5ee864e67c",
+                "reference": "a1472daa479474aeba21dc8895487e5ee864e67c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Relaxsd\\Stylesheets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martijn Kriek",
+                    "email": "martijn.kriek@relax-software.nl"
+                }
+            ],
+            "description": "Some stylesheet classes for PHP.",
+            "time": "2019-01-03T14:40:09+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-            "version": "1.0.5",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
+                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
+                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3,<8.0-DEV"
+                "php": "^7.1"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1.8",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~2.0"
+                "phpunit/phpunit": "^6.2.3",
+                "squizlabs/php_codesniffer": "^3.0.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -209,7 +258,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14T21:17:01+00:00"
+            "time": "2017-07-22T11:58:36+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -267,29 +316,35 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.3.2",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "bf329f6c1aadea3299f08ee804682b7c45b326a2"
+                "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bf329f6c1aadea3299f08ee804682b7c45b326a2",
-                "reference": "bf329f6c1aadea3299f08ee804682b7c45b326a2",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
+                "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0",
+                "php": "^7.0",
                 "phpdocumentor/reflection-common": "^1.0.0",
                 "phpdocumentor/type-resolver": "^0.4.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^4.4"
+                "doctrine/instantiator": "~1.0.5",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^6.4"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": [
@@ -308,7 +363,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-11-10T14:09:06+00:00"
+            "time": "2017-11-30T07:14:17+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1170,7 +1225,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.9.0",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -1228,16 +1283,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.15",
+            "version": "v3.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "c2f4812ead9f847cb69e90917ca7502e6892d6b8"
+                "reference": "291e13d808bec481eab83f301f7bff3e699ef603"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/c2f4812ead9f847cb69e90917ca7502e6892d6b8",
-                "reference": "c2f4812ead9f847cb69e90917ca7502e6892d6b8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/291e13d808bec481eab83f301f7bff3e699ef603",
+                "reference": "291e13d808bec481eab83f301f7bff3e699ef603",
                 "shasum": ""
             },
             "require": {
@@ -1283,24 +1338,25 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-10T07:34:36+00:00"
+            "time": "2018-11-11T19:48:54+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^5.3.3 || ^7.0",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
@@ -1333,15 +1389,12 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2018-12-25T11:19:39+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "relaxsd/pdflax": 20,
-        "relaxsd/pdflax-fpdf": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
