@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "190f5e8cce4052fc52c8f9105d38d31d",
+    "content-hash": "4207d02dabfd97306f1c2057e673be2d",
     "packages": [
         {
             "name": "anouar/fpdf",
@@ -112,16 +112,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.7.11",
+            "version": "5.7.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "64df81d3382d876f1c1d3d5481d89c93b61b8279"
+                "reference": "758927e5e925c1d442a1faaa1356675ceba0194c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/64df81d3382d876f1c1d3d5481d89c93b61b8279",
-                "reference": "64df81d3382d876f1c1d3d5481d89c93b61b8279",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/758927e5e925c1d442a1faaa1356675ceba0194c",
+                "reference": "758927e5e925c1d442a1faaa1356675ceba0194c",
                 "shasum": ""
             },
             "require": {
@@ -152,20 +152,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2018-10-08T13:34:14+00:00"
+            "time": "2018-11-15T13:49:08+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.7.11",
+            "version": "5.7.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "45bfc0cd080c51946f61c04e324c2b4c6df58a9d"
+                "reference": "1caddfa63a40d2f229bb0948d9871540da666d0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/45bfc0cd080c51946f61c04e324c2b4c6df58a9d",
-                "reference": "45bfc0cd080c51946f61c04e324c2b4c6df58a9d",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/1caddfa63a40d2f229bb0948d9871540da666d0b",
+                "reference": "1caddfa63a40d2f229bb0948d9871540da666d0b",
                 "shasum": ""
             },
             "require": {
@@ -211,20 +211,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2018-10-22T17:36:06+00:00"
+            "time": "2018-12-18T13:45:35+00:00"
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.35.1",
+            "version": "1.36.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "5c05a2be472b22f63291d192410df9f0e0de3b19"
+                "reference": "cd324b98bc30290f233dd0e75e6ce49f7ab2a6c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5c05a2be472b22f63291d192410df9f0e0de3b19",
-                "reference": "5c05a2be472b22f63291d192410df9f0e0de3b19",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cd324b98bc30290f233dd0e75e6ce49f7ab2a6c9",
+                "reference": "cd324b98bc30290f233dd0e75e6ce49f7ab2a6c9",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +269,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-11-14T21:55:58+00:00"
+            "time": "2018-12-28T10:07:33+00:00"
         },
         {
             "name": "psr/container",
@@ -370,15 +370,15 @@
         },
         {
             "name": "relaxsd/pdflax",
-            "version": "dev-master",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/pdflax.git",
-                "reference": "893e1a38035ef691fda0820db5895a05cde9f218"
+                "reference": "6c576a32dd6a9d6790c2c6df2c05a4f4ac511709"
             },
             "require": {
                 "php": ">=5.4.0",
-                "relaxsd/php-stylesheets": "dev-master"
+                "relaxsd/php-stylesheets": "^2.0.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4"
@@ -400,20 +400,25 @@
                 }
             ],
             "description": "PDF document and view wrappers for PHP.",
-            "time": "2018-11-15T00:35:41+00:00"
+            "time": "2019-01-03T14:57:42+00:00"
         },
         {
             "name": "relaxsd/pdflax-fpdf",
-            "version": "dev-master",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
-                "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/pdflax-fpdf.git",
-                "reference": "536eee087cb060982b2e6727f3fe4792dbb06a2d"
+                "url": "https://github.com/relaxsd/pdflax-fpdf.git",
+                "reference": "036b0e1d1422584300f3ecea88b671e4b33dc75f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/relaxsd/pdflax-fpdf/zipball/036b0e1d1422584300f3ecea88b671e4b33dc75f",
+                "reference": "036b0e1d1422584300f3ecea88b671e4b33dc75f",
+                "shasum": ""
             },
             "require": {
                 "anouar/fpdf": ">=1.0.1",
-                "relaxsd/pdflax": "dev-master",
-                "relaxsd/php-stylesheets": "dev-master"
+                "relaxsd/pdflax": "^0.8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4"
@@ -424,7 +429,7 @@
                     "Relaxsd\\Pdflax\\Fpdf\\": "src"
                 }
             },
-            "notification-url": "https://packagist.relax-software.nl/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -435,15 +440,21 @@
                 }
             ],
             "description": "Fpdf implementation for Pdflax.",
-            "time": "2018-11-15T03:20:54+00:00"
+            "time": "2019-01-03T15:16:34+00:00"
         },
         {
             "name": "relaxsd/php-stylesheets",
-            "version": "dev-master",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
-                "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/php-stylesheets.git",
-                "reference": "d81ccf6b145aac570b18e43fef92845bf8910b39"
+                "url": "https://github.com/relaxsd/php-stylesheets.git",
+                "reference": "a1472daa479474aeba21dc8895487e5ee864e67c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/relaxsd/php-stylesheets/zipball/a1472daa479474aeba21dc8895487e5ee864e67c",
+                "reference": "a1472daa479474aeba21dc8895487e5ee864e67c",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
@@ -457,7 +468,7 @@
                     "Relaxsd\\Stylesheets\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.relax-software.nl/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -468,7 +479,75 @@
                 }
             ],
             "description": "Some stylesheet classes for PHP.",
-            "time": "2018-11-13T00:29:55+00:00"
+            "time": "2019-01-03T14:40:09+00:00"
+        },
+        {
+            "name": "symfony/contracts",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/contracts.git",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0",
+                "psr/container": "^1.0"
+            },
+            "suggest": {
+                "psr/cache": "When using the Cache contracts",
+                "psr/container": "When using the Service contracts",
+                "symfony/cache-contracts-implementation": "",
+                "symfony/service-contracts-implementation": "",
+                "symfony/translation-contracts-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\": ""
+                },
+                "exclude-from-classmap": [
+                    "**/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A set of abstractions extracted out of the Symfony components",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2018-12-05T08:06:11+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -531,26 +610,30 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v4.1.7",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "aa04dc1c75b7d3da7bd7003104cd0cfc5dff635c"
+                "reference": "c0e2191e9bed845946ab3d99767513b56ca7dcd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/aa04dc1c75b7d3da7bd7003104cd0cfc5dff635c",
-                "reference": "aa04dc1c75b7d3da7bd7003104cd0cfc5dff635c",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/c0e2191e9bed845946ab3d99767513b56ca7dcd6",
+                "reference": "c0e2191e9bed845946ab3d99767513b56ca7dcd6",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
+                "symfony/contracts": "^1.0.2",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
                 "symfony/config": "<3.4",
                 "symfony/dependency-injection": "<3.4",
                 "symfony/yaml": "<3.4"
+            },
+            "provide": {
+                "symfony/translation-contracts-implementation": "1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
@@ -569,7 +652,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -596,7 +679,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-28T18:38:52+00:00"
+            "time": "2018-12-06T10:45:32+00:00"
         }
     ],
     "packages-dev": [
@@ -1971,6 +2054,64 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
             "name": "theseer/tokenizer",
             "version": "1.1.0",
             "source": {
@@ -2012,20 +2153,21 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^5.3.3 || ^7.0",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
@@ -2058,16 +2200,12 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2018-12-25T11:19:39+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "relaxsd/pdflax": 20,
-        "relaxsd/pdflax-fpdf": 20,
-        "relaxsd/php-stylesheets": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
