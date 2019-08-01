@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "efd40fb8f4b4b1b833710ec0047e1b8a",
+    "content-hash": "3ad869bd84db7ee9534cc13cf84092f8",
     "packages": [
         {
             "name": "anouar/fpdf",
@@ -93,21 +93,21 @@
         },
         {
             "name": "relaxsd/pdflax",
-            "version": "dev-master",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/relaxsd/pdflax.git",
-                "reference": "16b5f19cda169e8fe3003f4adfada716a723c09f"
+                "reference": "45171d7998a94aee8a9f114caa58b2e024dac4ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/relaxsd/pdflax/zipball/16b5f19cda169e8fe3003f4adfada716a723c09f",
-                "reference": "16b5f19cda169e8fe3003f4adfada716a723c09f",
+                "url": "https://api.github.com/repos/relaxsd/pdflax/zipball/45171d7998a94aee8a9f114caa58b2e024dac4ca",
+                "reference": "45171d7998a94aee8a9f114caa58b2e024dac4ca",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "relaxsd/php-stylesheets": "^2.0.0"
+                "relaxsd/php-stylesheets": "2.0.*"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4"
@@ -134,25 +134,26 @@
                 }
             ],
             "description": "PDF document and view wrappers for PHP.",
-            "time": "2019-01-03T21:25:14+00:00"
+            "time": "2019-08-01T22:25:55+00:00"
         },
         {
             "name": "relaxsd/pdflax-fpdf",
-            "version": "dev-master",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/relaxsd/pdflax-fpdf.git",
-                "reference": "a831478cd1cb537211faa5fa6bad577b05e7a575"
+                "reference": "cacfc3b24ba78d54d2746b4659e2a5af40ce0b73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/relaxsd/pdflax-fpdf/zipball/a831478cd1cb537211faa5fa6bad577b05e7a575",
-                "reference": "a831478cd1cb537211faa5fa6bad577b05e7a575",
+                "url": "https://api.github.com/repos/relaxsd/pdflax-fpdf/zipball/cacfc3b24ba78d54d2746b4659e2a5af40ce0b73",
+                "reference": "cacfc3b24ba78d54d2746b4659e2a5af40ce0b73",
                 "shasum": ""
             },
             "require": {
                 "anouar/fpdf": ">=1.0.1",
-                "relaxsd/pdflax": "^0.8.0"
+                "relaxsd/pdflax": "0.8.*",
+                "relaxsd/php-stylesheets": "2.0.*"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4"
@@ -179,20 +180,20 @@
                 }
             ],
             "description": "Fpdf implementation for Pdflax.",
-            "time": "2019-01-03T21:47:56+00:00"
+            "time": "2019-08-01T23:10:02+00:00"
         },
         {
             "name": "relaxsd/php-stylesheets",
-            "version": "dev-master",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
-                "url": "ssh://git@git.relax-software.nl:31422/git/relaxsd/php-stylesheets.git",
-                "reference": "a1472daa479474aeba21dc8895487e5ee864e67c"
+                "url": "https://github.com/relaxsd/php-stylesheets.git",
+                "reference": "9bdf2b267a1a2515d3458a67f6def0e68b14ad69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/relaxsd/php-stylesheets/zipball/4f8451a659fc27ab2185e710797074074e6716a4",
-                "reference": "4f8451a659fc27ab2185e710797074074e6716a4",
+                "url": "https://api.github.com/repos/relaxsd/php-stylesheets/zipball/9bdf2b267a1a2515d3458a67f6def0e68b14ad69",
+                "reference": "9bdf2b267a1a2515d3458a67f6def0e68b14ad69",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +224,7 @@
                 }
             ],
             "description": "Some stylesheet classes for PHP.",
-            "time": "2019-01-03T14:40:09+00:00"
+            "time": "2019-08-01T19:41:54+00:00"
         }
     ],
     "packages-dev": [
@@ -1415,11 +1416,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "relaxsd/pdflax": 20,
-        "relaxsd/pdflax-fpdf": 20,
-        "relaxsd/php-stylesheets": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
