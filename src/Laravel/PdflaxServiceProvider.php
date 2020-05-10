@@ -2,17 +2,11 @@
 
 namespace Relaxsd\Pdflax\Laravel;
 
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
-class PdflaxServiceProvider extends ServiceProvider
+class PdflaxServiceProvider extends ServiceProvider implements DeferrableProvider
 {
-
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = true;
 
     /**
      * Bootstrap the application events.
