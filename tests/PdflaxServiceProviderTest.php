@@ -11,7 +11,7 @@ class PdflaxServiceProviderTest extends TestCase
     /** @var \Relaxsd\Pdflax\Laravel\PdflaxServiceProvider */
     protected $serviceProvider;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         parent::setUp();
 
