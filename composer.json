@@ -17,6 +17,12 @@
   "require-dev": {
     "phpunit/phpunit": "^7.0"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "git@github.com:relaxsd/fpdf.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Relaxsd\\Pdflax\\": "src"
